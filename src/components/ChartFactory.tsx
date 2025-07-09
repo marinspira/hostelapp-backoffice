@@ -53,7 +53,7 @@ export const ChartFactory = ({ type, title, data }: Props) => {
     };
 
     return (
-        <div style={{ marginBottom: "2rem", maxWidth: 400 }}>
+        <div style={{ marginBottom: "2rem", maxWidth: 400, flex: 1 }}>
             <h3>{title}</h3>
             {renderChart()}
         </div>
