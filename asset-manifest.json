@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/marinspira/hostelapp-backoffice/static/css/main.e6c13ad2.css",
+    "main.js": "/marinspira/hostelapp-backoffice/static/js/main.d0ed7fe5.js",
+    "static/js/453.c4db8262.chunk.js": "/marinspira/hostelapp-backoffice/static/js/453.c4db8262.chunk.js",
+    "index.html": "/marinspira/hostelapp-backoffice/index.html",
+    "main.e6c13ad2.css.map": "/marinspira/hostelapp-backoffice/static/css/main.e6c13ad2.css.map",
+    "main.d0ed7fe5.js.map": "/marinspira/hostelapp-backoffice/static/js/main.d0ed7fe5.js.map",
+    "453.c4db8262.chunk.js.map": "/marinspira/hostelapp-backoffice/static/js/453.c4db8262.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.d0ed7fe5.js"
+  ]
+}
