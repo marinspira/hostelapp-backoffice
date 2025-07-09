@@ -3,7 +3,7 @@ import UserStatsCharts from "./components/UserStatsCharts";
 
 function App() {
   return (
-    <div>
+    <div style={styles.container}>
       <h1>HostelApp Admin Dashboard</h1>
       <HostelStatsCharts />
       <UserStatsCharts/>
@@ -12,3 +12,9 @@ function App() {
 }
 
 export default App;
+
+const styles = {
+  container: {
+    padding: "40px"
+  }
+}
