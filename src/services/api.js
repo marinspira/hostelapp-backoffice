@@ -9,3 +9,4 @@ const API = axios.create({
 
 export const fetchHostelStats = () => API.get("/hostels-stats");
 export const fetchUserStats = () => API.get("/users-stats");
+export const fetchLogs = () => API.get("/error-logs");

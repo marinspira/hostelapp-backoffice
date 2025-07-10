@@ -1,5 +1,6 @@
 import DashboardLayout from "./components/DashboardLayout";
 import PanelFactory from "./components/DraggingPanelFactory";
+import LogsTable from "./components/LogsTable";
 import { fetchHostelStats, fetchUserStats } from "./services/api"
 
 function App() {
@@ -60,7 +61,7 @@ function App() {
             dataFetcher={() => fetchHostelStats().then(res => res.data.data)}
             name="Hostel Statistics"
           />,
-        logs: <p>Logs</p>,
+        logs: <LogsTable />,
         users:
           <PanelFactory
             key="users"
@@ -70,18 +71,12 @@ function App() {
           />,
       }}
       items={[
+        { key: "users", label: "Users Statistics" },
         { key: "hostels", label: "Hostel Statistics" },
         { key: "logs", label: "Logs" },
-        { key: "users", label: "Users" },
       ]}
     />
   );
 }
 
 export default App;
-
-const styles = {
-  container: {
-    padding: "40px"
-  }
-}

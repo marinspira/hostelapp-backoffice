@@ -91,7 +91,6 @@ const defaultStyles = {
   container: {
     display: "flex",
     flexDirection: "column",
-    backgroundColor: "white",
     padding: "20px",
     maxWidth: "100%",
     gap: "10px",
