@@ -7,7 +7,6 @@ import * as React from "react";
 
 type ChartType = "pie" | "doughnut" | "bar" | "bar-horizontal";
 
-
 type Props = {
     type: ChartType;
     title: string;
@@ -52,8 +51,9 @@ export const ChartFactory = ({ type, title, data }: Props) => {
         }
     };
 
+
     return (
-        <div style={{ marginBottom: "2rem", maxWidth: 400, flex: 1 }}>
+        <div style={{ marginBottom: "2rem", flex: 1 }}>
             <h3>{title}</h3>
             {renderChart()}
         </div>

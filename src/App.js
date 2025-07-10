@@ -1,9 +1,10 @@
-import PanelFactory from "./components/PanelFactory";
-import { fetchHostelStats } from "./services/api"
+import DashboardLayout from "./components/DashboardLayout";
+import PanelFactory from "./components/DraggingPanelFactory";
+import { fetchHostelStats, fetchUserStats } from "./services/api"
 
 function App() {
 
-  const hostelCharts = [
+  const hostelsCharts = [
     {
       key: "popularity",
       type: "pie",
@@ -38,14 +39,42 @@ function App() {
     },
   ];
 
+  const userCharts = [
+    {
+      key: "usersByRole",
+      type: "pie",
+      title: "Users by role",
+      dataKey: "usersByRole",
+      defaultPos: { x: 0, y: 0 },
+      minHeight: 150,
+    },
+  ];
+
   return (
-    <div style={styles.container}>
-      <h1>HostelApp Admin Dashboard</h1>
-      <PanelFactory
-        charts={hostelCharts}
-        dataFetcher={() => fetchHostelStats().then(res => res.data.data)}
-      />
-    </div>
+    <DashboardLayout
+      contentMap={{
+        hostels:
+          <PanelFactory
+            key="hostels"
+            charts={hostelsCharts}
+            dataFetcher={() => fetchHostelStats().then(res => res.data.data)}
+            name="Hostel Statistics"
+          />,
+        logs: <p>Logs</p>,
+        users:
+          <PanelFactory
+            key="users"
+            charts={userCharts}
+            dataFetcher={() => fetchUserStats().then(res => res.data.data)}
+            name="Users Statistics"
+          />,
+      }}
+      items={[
+        { key: "hostels", label: "Hostel Statistics" },
+        { key: "logs", label: "Logs" },
+        { key: "users", label: "Users" },
+      ]}
+    />
   );
 }
 

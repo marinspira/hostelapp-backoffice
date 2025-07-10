@@ -26,6 +26,7 @@ const PanelFactory = ({
   data,           
   defaultSize = { width: 200, height: 260 },
   styles = {},
+  name
 }) => {
   const [internalData, setInternalData] = useState(null);
   const isControlled = !!data;
@@ -44,7 +45,7 @@ const PanelFactory = ({
 
   return (
     <div style={{ ...defaultStyles.container, ...styles.container }}>
-      <h2>Statistics Panel</h2>
+      <h2>{name}</h2>
 
       <div style={{ ...defaultStyles.content, ...styles.content }}>
         {charts.map(({ key, type, title, dataKey, defaultPos, minHeight }) => (
@@ -95,7 +96,6 @@ const defaultStyles = {
     maxWidth: "100%",
     gap: "10px",
     borderRadius: "10px",
-    height: "100vh",
     position: "relative",
     backgroundColor: "#f9f9f9",
   },
