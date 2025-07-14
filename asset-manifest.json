@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/hostelapp-backoffice/static/css/main.02cf6618.css",
-    "main.js": "/hostelapp-backoffice/static/js/main.f8be0ed3.js",
+    "main.js": "/hostelapp-backoffice/static/js/main.be9062c5.js",
     "static/js/453.c4db8262.chunk.js": "/hostelapp-backoffice/static/js/453.c4db8262.chunk.js",
     "index.html": "/hostelapp-backoffice/index.html",
     "main.02cf6618.css.map": "/hostelapp-backoffice/static/css/main.02cf6618.css.map",
-    "main.f8be0ed3.js.map": "/hostelapp-backoffice/static/js/main.f8be0ed3.js.map",
+    "main.be9062c5.js.map": "/hostelapp-backoffice/static/js/main.be9062c5.js.map",
     "453.c4db8262.chunk.js.map": "/hostelapp-backoffice/static/js/453.c4db8262.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.02cf6618.css",
-    "static/js/main.f8be0ed3.js"
+    "static/js/main.be9062c5.js"
   ]
 }
