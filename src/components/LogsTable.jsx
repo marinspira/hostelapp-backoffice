@@ -27,7 +27,7 @@ const LogsTable = () => {
                 <thead style={styles.thead}>
                     <tr>
                         <th style={styles.th}>Timestamp</th>
-                        <th style={styles.th}>Method</th>
+                        <th style={styles.th}>Type</th>
                         <th style={styles.th}>Route</th>
                         <th style={styles.th}>Message</th>
                     </tr>
@@ -36,7 +36,7 @@ const LogsTable = () => {
                     {logs.map((log, index) => (
                         <tr key={index} style={styles.tr}>
                             <td style={styles.td}>{new Date(log.time).toLocaleString()}</td>
-                            <td style={styles.td}>{log.method}</td>
+                            <td style={styles.td}>{log.type}</td>
                             <td style={styles.td}>{log.route}</td>
                             <td style={styles.td}>{log.message}</td>
                         </tr>

@@ -71,9 +71,9 @@ function App() {
           />,
       }}
       items={[
+        { key: "logs", label: "Logs" },
         { key: "users", label: "Users Statistics" },
         { key: "hostels", label: "Hostel Statistics" },
-        { key: "logs", label: "Logs" },
       ]}
     />
   );
